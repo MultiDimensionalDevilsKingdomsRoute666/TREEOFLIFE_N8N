@@ -365,7 +365,7 @@ catalogs:
     '@storybook/addon-a11y': ^10.5.10
     '@storybook/addon-docs': ^10.5.10
     '@storybook/addon-themes': ^10.5.10
-    '@storybook/addon-vitest': ^10.5.10
+    '@storybook/addon-vitest': ^10.6.2
     '@storybook/vue3': ^10.5.10
     '@storybook/vue3-vite': ^10.5.10
     eslint-plugin-storybook: ^10.5.10

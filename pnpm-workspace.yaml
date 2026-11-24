@@ -275,7 +275,7 @@ catalog:
   qs: 6.16.0
   reflect-metadata: 0.2.2
   rimraf: 6.0.1
-  sanitize-html: 2.18.0
+  sanitize-html: 2.18.1
   sass-embedded: ^1.98.0
   semver: 7.7.3
   simple-git: 4.0.2

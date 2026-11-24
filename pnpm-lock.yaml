@@ -485,6 +485,9 @@ catalogs:
     '@types/oracledb':
       specifier: 6.10.3
       version: 6.10.3
+    '@types/pg-copy-streams':
+      specifier: 1.2.5
+      version: 1.2.5
     '@types/pluralize':
       specifier: ^0.0.33
       version: 0.0.33
@@ -684,8 +687,8 @@ catalogs:
       specifier: 3.7.2
       version: 3.7.2
     markdown-it:
-      specifier: ^13.0.2
-      version: 13.0.2
+      specifier: ^14.3.3
+      version: 14.3.3
     markdown-it-link-attributes:
       specifier: ^4.0.1
       version: 4.0.1
@@ -5965,7 +5968,7 @@ importers:
         version: 11.12.0
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       markdown-it-link-attributes:
         specifier: 'catalog:'
         version: 4.0.1
@@ -6228,7 +6231,7 @@ importers:
         version: 4.18.1(patch_hash=0384abb0bf57b0811e09219dbce0b926741d818285ee77526ad4cb75a60b87a1)
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       markdown-it-emoji:
         specifier: ^2.0.2
         version: 2.0.2
@@ -7339,7 +7342,7 @@ importers:
         version: 3.7.2
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
@@ -9808,7 +9811,7 @@ importers:
         version: 3.3.3
       markdown-it:
         specifier: 'catalog:'
-        version: 13.0.2
+        version: 14.3.3
       ts-morph:
         specifier: 'catalog:'
         version: 27.0.2
@@ -15556,6 +15559,7 @@ packages:
   '@sapphire/shapeshift@4.0.0':
     resolution: {integrity: sha512-d9dUmWVA7MMiKobL3VpLF8P2aeanRTu6ypG2OIaEv/ZHH/SUQ2iHOVyi5wAPjQ+HmnMuL0whK9ez8I/raWbtIg==}
     engines: {node: '>=v16'}
+    deprecated: Shapeshift was created when other validation libraries had significant limitations in performance and error reporting. Those advantages have diminished as libraries such as Zod have become faster and improved their error messages, while also gaining broader environment support, a larger community, and custom error printers.
 
   '@sapphire/snowflake@3.5.5':
     resolution: {integrity: sha512-xzvBr1Q1c4lCe7i6sRnrofxeO1QTP/LKQ6A6qy0iB4x5yfiSfARMEQEghojzTNALDTcv8En04qYNIco9/K9eZQ==}
@@ -18193,7 +18197,7 @@ packages:
   alasql@4.4.0:
     resolution: {integrity: sha512-EQOk3NEvKcQxoYeY0d4ePF0VHAcljx3pn5ZkEowMPRThjWXyDc/VHYqC8Sg+6BH2ZhKZBdeRqlvlgZmhfGBtDA==}
     engines: {node: '>=15'}
-    deprecated: There is a new patch version of AlaSQL for you. Bump to v4.4.1 to avoid a security issue. It's a safe bump - we only added the patch so it's fully feature-stable.
+    deprecated: 'Please upgrade to 4.4.2 or later: https://github.com/AlaSQL/alasql/security/advisories/GHSA-834p-3m5w-q478'
     hasBin: true
 
   alien-signals@1.0.4:
@@ -22682,6 +22686,10 @@ packages:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
 
+  markdown-it@14.3.3:
+    resolution: {integrity: sha512-L//tDAkjTjJCU6pBUSBTgs3Kg4InVaZuUZog/b6V12UKhcDQ7S78877ibbCanRExwPuYP1CZD7Gd2dxSy1GXRg==}
+    hasBin: true
+
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
 
@@ -22779,6 +22787,9 @@ packages:
 
   mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
+
+  mdurl@2.1.0:
+    resolution: {integrity: sha512-1+HBaOx0zi/dQWht8rNv9MYf9qqpqL/kxI0hXImU6Y547zM6Sni8BQibt7ifgMcYtQg41ao3Ivd6cnSM86inpg==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -27340,12 +27351,15 @@ packages:
 
   yuku-ast@0.1.7:
     resolution: {integrity: sha512-2RiMEWv500TixY5rJy6OZd4fSy9WYZKWh6gGbIJ7y7vAGcuCugWOWwOLGaQcRZrXcPUfqtLtvpaJ3SdXtWlhKA==}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   yuku-codegen@0.6.1:
     resolution: {integrity: sha512-6RJqqON2xYhMEp/sZv5oOSI3uOpWwRwzAi2fc/rMcRFjcqedAC5Fyp4AD9Vn2b8SB7hf9ESqVW+YwbDs/KvyKA==}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   yuku-parser@0.6.1:
     resolution: {integrity: sha512-dPE3/+H2VBw9LhjoIVeW/axKidYGd+XzNtrwGGseZ0325cQFl0Dpwyh0R74XWe/WqQn4M8CR5YApsv2KF2zN1A==}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   yup@0.32.11:
     resolution: {integrity: sha512-Z2Fe1bn+eLstG8DRR6FTavGD+MeAwyfmouhHsIUgaADz8jvFKbO/fXc2trJKZg+5EBjh4gGm3iU/t3onKlXHIg==}
@@ -42229,6 +42243,15 @@ snapshots:
       mdurl: 1.0.1
       uc.micro: 1.0.6
 
+  markdown-it@14.3.3:
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.2
+      mdurl: 2.1.0
+      punycode.js: 2.3.1
+      uc.micro: 2.1.0
+
   markdown-table@3.0.4: {}
 
   marked@16.4.2: {}
@@ -42453,6 +42476,8 @@ snapshots:
   mdn-data@2.23.0: {}
 
   mdurl@1.0.1: {}
+
+  mdurl@2.1.0: {}
 
   media-typer@0.3.0: {}
 

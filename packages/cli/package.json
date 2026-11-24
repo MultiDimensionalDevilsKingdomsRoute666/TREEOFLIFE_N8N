@@ -70,7 +70,7 @@
     ]
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.2",
+    "@faker-js/faker": "^10.5.0",
     "@n8n/backend-test-utils": "workspace:*",
     "@n8n/oxlint-config": "workspace:*",
     "@n8n/playwright-janitor": "workspace:*",

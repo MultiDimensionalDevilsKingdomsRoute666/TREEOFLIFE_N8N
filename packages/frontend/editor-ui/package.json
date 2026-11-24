@@ -37,7 +37,7 @@
     "@codemirror/state": "catalog:",
     "@codemirror/view": "catalog:",
     "@dagrejs/dagre": "^1.1.4",
-    "@faker-js/faker": "^8.0.2",
+    "@faker-js/faker": "^10.5.0",
     "@iconify/json": "catalog:",
     "@internationalized/date": "catalog:frontend",
     "@lezer/common": "catalog:",
